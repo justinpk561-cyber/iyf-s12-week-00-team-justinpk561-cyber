@@ -1,10 +1,9 @@
-# team project
-<h1>
-  <section></section>
-</h1>
-<p>this is a team project working on pull requests, merging and solving issues </p>
+# Our Teams Knowledge Base
+Welcome, this is our teams repository where we share projects, issues
+and conflicts in order to help each other solve and learn simultaneously
 
-## a resourceful site to learn dev tool
-<ul> 
-  <li><a href="https://www.w3schools.com">site</a></li>
-</ul>
+## Justin's Section - HTTPS
+<!-- my paragraph -->
+
+## Calvin's Section
+<!-- your paragraph -->
