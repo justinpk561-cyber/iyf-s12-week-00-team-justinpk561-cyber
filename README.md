@@ -21,3 +21,5 @@ I am an **undergraduate student studying Real Estate** at *Kenyatta University*,
 
 ## Grace's Section
 <!-- your paragraph -->
+
+## Claire's Section 
