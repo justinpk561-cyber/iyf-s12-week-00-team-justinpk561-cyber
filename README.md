@@ -7,3 +7,6 @@ and conflicts in order to help each other solve and learn simultaneously
 
 ## Calvin's Section
 <!-- your paragraph -->
+
+## Grace's Section
+<!-- your paragraph -->
