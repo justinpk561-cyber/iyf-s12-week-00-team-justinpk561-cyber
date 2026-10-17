@@ -10,7 +10,7 @@ and conflicts in order to help each other solve and learn simultaneously
 I am an **undergraduate student studying Real Estate** at *Kenyatta University*, while simultaneously expanding my technical capabilities in web development and programming. 
 
 ## Core Focus & Skills
-* **Web Development:** HTML5, CSS, JavaScript and gitbub.
+* **Web Development:** HTML, CSS, JavaScript and gitbub.
 * **Real Estate student:** Interested in real estate analytics, property management systems, and building digital tools for the property market.
 * **Tools & Workflow:** VS Code, Command Line / Shell, and collaborative GitHub workflows.
 
