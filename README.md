@@ -20,7 +20,16 @@ I am an **undergraduate student studying Real Estate** at *Kenyatta University*,
 
 
 ## Grace's Section
-<!-- your paragraph -->
+I am learning **programming** to explore new ways of thinking, explore how technology works and create information using codes.
+
+## Core Focus & Skills
+* **Web Development:** HTML, CSS, JavaScript, github and backend.
+* **Problem solving & Algorithm:** data structure, and breakjng problems into steps.
+
+**Soft skills:** Persistence( learning to debug and not giving up when it fails)
+**Creativity:** Turning ideas into projects .
+
+> *"no effort = no progress."*
 
 ## Claire's Section 
 
@@ -46,4 +55,4 @@ Practicing local thinking, data structures, and breaking problems into steps.
 - **Persistence:** Learning to debug and note give up when code fails.
 - **Creativity:** Turning ideas into real projects.
 
->*"Every expert was once a beginner. I'm coding my future one at a time"*
+>*"Every expert was once a beginner. I'm coding my future one at a time.
