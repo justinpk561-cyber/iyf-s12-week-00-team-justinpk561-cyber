@@ -56,3 +56,8 @@ Practicing local thinking, data structures, and breaking problems into steps.
 - **Creativity:** Turning ideas into real projects.
 
 >*"Every expert was once a beginner. I'm coding my future one at a time.
+
+## Magdalene's section 
+
+## fidel's section
+
