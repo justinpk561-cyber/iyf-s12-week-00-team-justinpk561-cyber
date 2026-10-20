@@ -22,28 +22,41 @@ I am an **undergraduate student studying Real Estate** at *Kenyatta University*,
 ## Grace's Section
 <!-- your paragraph -->
 
-## Claire's Section 
+## Claire's Section
+ 
+I am learning HTML to build structured web pages. I love creating forms, links, and layouts.
 
-I am learning **programming** not just to code,but to develop a new way of thinking.I am passionate about learning how technology works and how I can use code to create useful information.
+**Skills:** HTML5, Semantic Tags, Forms
+**Quote:** "Code is like art, keep building."
 
-## Core Focus 
-### 1. Web development 
-Learning how websites are build - Frontend (HTML,CSS, JavaScript) and backend.
-### 2. Version Control & Collaboration 
-Mastering git and github to work in teams, manage code, and contribute to open source like our group project.
-### 3. Problem solving & Algorithms
-Practicing local thinking, data structures, and breaking problems into steps.
+### HTML
 
-## Skills Developed Through Learning Programming 
+**HTML** (HyperText Markup Language) is the standard language for creating web pages.
 
-**Technical Skills:**
-- `Languages:` HTML, CSS, JavaScript, Python.
-- `Tools:` Vs Code, Git, GitHub, and Termux on Android.
-- `Concepts:` Command line, Markdown, Debugging.
+### Why Students Should Learn It
+- It is the backbone of all websites.
+- Easy to learn for beginners.
+- Works with CSS and JavaScript to make sites beautiful and interactive.
+- Every web developer must know it.
 
-**Soft Skills**
-- **Logical Thinking:** Breaking complex problems into simple steps.
-- **Persistence:** Learning to debug and note give up when code fails.
-- **Creativity:** Turning ideas into real projects.
+### Basic Example
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First Page</title>
+</head>
+<body>
+  <h1>Hello World!</h1>
+  <p>This is a paragraph.</p>
+</body>
+</html>
 
->*"Every expert was once a beginner. I'm coding my future one at a time"*
+### Useful Links
+- [MDN Web Docs - HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [W3Schools HTML Tutorial](https://www.w3schools.com/html/)
+- [HTML Living Standard](https://html.spec.whatwg.org/)
+- [Learn HTML - web.dev](https://web.dev/learn/html)
+- [HTML Validator](https://validator.w3.org/)
+ 
++
