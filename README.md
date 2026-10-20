@@ -52,6 +52,7 @@ I am learning HTML to build structured web pages. I love creating forms, links, 
   <p>This is a paragraph.</p>
 </body>
 </html>
+```
 
 ### Useful Links
 - [MDN Web Docs - HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -59,9 +60,11 @@ I am learning HTML to build structured web pages. I love creating forms, links, 
 - [HTML Living Standard](https://html.spec.whatwg.org/)
 - [Learn HTML - web.dev](https://web.dev/learn/html)
 - [HTML Validator](https://validator.w3.org/)
-+ 
+
+ 
 ## Magdalene's section 
 
 ## fidel's section
 
 
++
