@@ -28,7 +28,6 @@ I am learning **programming** to explore new ways of thinking, explore how techn
 I am learning HTML to build structured web pages. I love creating forms, links, and layouts.
 
 **Skills:** HTML5, Semantic Tags, Forms
-**Quote:** "Code is like art, keep building."
 
 ### HTML
 
