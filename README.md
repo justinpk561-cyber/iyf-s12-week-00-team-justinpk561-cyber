@@ -20,7 +20,8 @@ I am an **undergraduate student studying Real Estate** at *Kenyatta University*,
 
 
 ## Grace's Section
-<!-- your paragraph -->
+I am learning **programming** to explore new ways of thinking, explore how technology works and create information using codes.
+
 
 ## Claire's Section
  
@@ -58,5 +59,9 @@ I am learning HTML to build structured web pages. I love creating forms, links, 
 - [HTML Living Standard](https://html.spec.whatwg.org/)
 - [Learn HTML - web.dev](https://web.dev/learn/html)
 - [HTML Validator](https://validator.w3.org/)
- 
-+
++ 
+## Magdalene's section 
+
+## fidel's section
+
+
