@@ -66,7 +66,42 @@ I am learning HTML to build structured web pages. I love creating forms, links, 
 ## fidel's section
 
 ## Joseph 
-### 
+### [`Document Object Model`](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+
+The  DOM connects web pages to script or programming languages by representing the structure of a document 
+DOM represents a document with a logical tree, where by each branch of tree ends in a node , and each node contains objects. DOM methods allow programmatic access to the tree. With them, you can change the document's structure, style, or content.
+
+### Concepts and Usage
+
+A web page is a document that can be either displayed in the browser window or as a `HTML` source. In both cases, the `DOM` allows it to be manipulated. As an object-oriented representation of the web page, it can be modified using a scripting language  like `Javascript`.
+
+For Example:
+```
+const paragraphs = document.querySelectorAll("p");
+// paragraphs[0] is the first <p> element
+// paragraphs[1] is the second <p> element, etc.
+alert(paragraphs[0].nodeName);
+```
+
+
+### [Dom Tree](https://www.w3schools.com/js/js_htmldom.asp)
+When a web page loads, the browser creates a tree-like representation of the HTML document.
+
+Each part of the document are nodes in the tree:
+
+
+|Node |Description|
+|----------|--------------|
+|`<html>`|Element Node|
+|`<head> `| Element Node|
+|`<body>`| Element node|
+| `<a>` | Element Node|
+| `href` | Attribute node|
+| `<h1>` | Element Node |
+| `My Header`| Text node |
+
+
+
 
 
 
