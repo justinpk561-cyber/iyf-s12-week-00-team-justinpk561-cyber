@@ -139,12 +139,12 @@ document.querySelector("h1");
 
 means: 
 
->find an `<h1>` element in the webpage .
+> find an `<h1>` element in the webpage .
 
 
 2. `*Selecting Elements *`
 
-[ ] `QuerySelector()`
+ `QuerySelector()`
 
 ``` javascript
 const heading = document.querySelector(".title");
@@ -424,10 +424,8 @@ setAttribute() → change/set
 9.`classList`
 
 classList lets JavaScript manipulate `CSS` classes.
+[for more of Dom manipulation read the `article` ](https://javascript.info/document)
 
-
-# do not submit am not done
-> remember
 
 
 
