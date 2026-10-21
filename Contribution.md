@@ -1,13 +1,13 @@
-## Team Members
-<!--
-| Name | GitHub | Role | Contributions |
+# Team Members
+
+ | Name | GitHub | Role | Contributions |
 |------|--------|------|---------------|
 | username(Lead)|  [username](github link ) | Team Lead | edit|
 | Quantums-meruit |[Quantums-meruit](Https://github.com/Quantums-meruit/) | member | DOM |
 |username|[username](link) | member| edit |
 | gakuruclaire39 | [ gakuruclaire39](link)|
 
--->
+
 # Our Teams Knowledge Base
 Welcome, this is our teams repository where we share projects, issues
 and conflicts in order to help each other solve and learn simultaneously
