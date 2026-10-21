@@ -424,7 +424,8 @@ setAttribute() → change/set
 9.`classList`
 
 classList lets JavaScript manipulate `CSS` classes.
-[for more of Dom manipulation read the `article` ](https://javascript.info/document)
+
+> [for more of Dom manipulation read the `article` ](https://javascript.info/document)
 
 
 
