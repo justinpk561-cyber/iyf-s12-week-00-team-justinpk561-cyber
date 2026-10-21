@@ -100,6 +100,332 @@ Each part of the document are nodes in the tree:
 | `<h1>` | Element Node |
 | `My Header`| Text node |
 
+
+
+DOM connects web pages to script or programming languages by representing the structure of a document with logical tree where by each branch of the tree ends in a node and each node contains objects.
+
+Example :
+
+``` HTML
+<body>
+    <h1>Hello</h1>
+    <p>Welcome</p>
+</body>
+
+```
+
+The browser represents it roughly as :
+
+```
+document
+└── body
+    ├── h1
+    └── p
+```
+
+1. **Document Object**
+`document ` represents the webpage 
+
+``` JavaScript
+`document`
+```
+
+DOM manipulation usually starts from `document `
+
+Example:
+``` javascript 
+document.querySelector("h1");
+```
+
+means: 
+
+>find an `<h1>` element in the webpage .
+
+
+2. `*Selecting Elements *`
+
+[ ] `QuerySelector()`
+
+``` javascript
+const heading = document.querySelector(".title");
+```
+
+`querySelector()` finds the first element matching the selector
+
+it uses CSS selector syntax.
+
+``` javascript
+**ID** 
+
+document.queryselector("#title")
+
+
+**Class** 
+
+document.queryselector(".title")
+
+**Tag**
+
+document.queryselector("h1")
+
+```
+
+NB: 
+>the selector tells js what to search for .
+>The returned value is the actual DOM element 
+
+
+Example 
+
+``` javascript
+const heading = document.queryselector(".title")
+
+```
+
+
+> ``` plain text
+> ".title" -->  selector
+> heading -> actual element
+> heading.textContent -> text inside the element
+> ```
+
+
+3. `querySelector()` vs `querySelectorAll()`
+
+`querySelector()`
+
+- it returns the first matching element.
+
+
+``` js
+const message = document.querySelector(".message");
+```
+
+
+if you have :
+
+```html
+<p class="message">One</p>
+<p class="message">Two</p>
+```
+
+only the first `<p>` is returned 
+
+`querySelectorAll()`
+
+returning all matching elements 
+
+```js
+const messages = document.querySelectorAll(".message");
+```
+
+This gives a Nodelist containing all matching elements.
+
+4.`NodeList indexing`
+
+In JavaScript indexing begins at [0]
+
+Example:
+
+```js
+const topics = document.querySelectorAll(".topic");
+
+console.log(topics[0]);
+console.log(topics[1]);
+console.log(topics[2]);
+```
+
+hence:
+
+``` Plain text
+topics[0] → first element
+topics[1] → second element
+topics[2] → third element
+```
+
+>NB:
+>index 0 = first element 
+
+thus:
+
+```js 
+topics[1].textContent
+```
+
+gets the second element's text.
+
+
+5.`textContent
+
+`textContent` allows one to read or change text inside an element.
+
+Reading
+
+```js 
+const heading = document.querySelector("h1");
+
+console.log(heading.textContent);
+```
+
+if:
+
+```html
+ <h1> Hello</h1>
+```
+
+the result is:
+
+```plain text 
+Hello
+```
+
+**Changing **
+
+```js
+heading.textContent = "Welcome!"
+```
+
+The text on the webpages changes.
+
+NB ⭐
+
+
+``` Plain text
+heading
+       ↓
+actual element
+
+heading.textContent
+       ↓
+text inside the element
+```
+
+6.**forEach()**
+
+When `querySelectorAll() ` gives you multiple elements, you can loop through them with `forEach()`
+
+```js
+const fruits = document.querySelectorAll(".fruit");
+
+fruits.forEach(function(fruit) {
+    console.log(fruit.textContent);
+});
+```
+
+if there are three fruits, the callback runs three times.
+
+**important distiction**
+
+``` plain text
+fruits
+  ↓
+entire collection
+
+fruit
+  ↓
+one element at a time
+```
+
+the parameter name doesn't have to be `fruit`
+
+All the below are valid:
+
+```js
+	fruits.forEach(function(fruit) {
+});
+```
+
+``` js
+
+fruits.forEach(function(item) {
+});
+```
+
+
+```js
+
+fruits.forEach(function(element) {
+});
+```
+
+
+the name is your choice 
+
+**NB ⭐**
+
+`forEach()` **doesn't select elements**.
+
+`querySelectorAll()` selects them.
+
+`forEach()` **iterates through the selected elements**.
+
+7. **Reading Attributes**
+
+DOM elements can have HTML atrributes.
+
+Example:
+
+```html
+<a href="https://example.com">Visit</a>
+```
+
+
+attributes are read using the below:
+
+``` js
+
+element.getattribute("href")
+```
+
+Example:
+
+``` js
+const link = document.querySelector("a");
+
+console.log(link.getAttribute("href"));
+```
+
+output:
+
+``` plain text
+
+https://example.com
+```
+
+`getAttribute()`
+>read an attribute.
+
+
+8. `Changing Attributes`
+Dom allows changing attributes with:
+
+```js
+
+element.setAttribute("attribute", "value")
+```
+
+Example:
+
+```js
+link.SetAttribute("href", "https://example.com")
+```
+
+
+**NB ⭐**
+
+Remember:
+
+```plain text
+
+getAttribute() → read
+setAttribute() → change/set
+```
+
+9.`classList`
+
+classList lets JavaScript manipulate `CSS` classes.
+
+
 # do not submit am not done
 > remember
 
