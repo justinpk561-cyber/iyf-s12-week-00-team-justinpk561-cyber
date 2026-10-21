@@ -5,7 +5,7 @@
 | username(Lead)|  [username](github link ) | Team Lead | edit|
 | Quantums-meruit |[Quantums-meruit](Https://github.com/Quantums-meruit/) | member | DOM |
 |username|[username](link) | member| edit |
-| gakuruclaire39 | [ gakuruclaire39](link)|member| HTML|
+| gakuruclaire39-cmd | [ gakuruclaire39-cmd](Https://github.com/gakuruclaire39-cmd/)|member| HTML|
 
 
 # Our Teams Knowledge Base
