@@ -2,7 +2,7 @@
 
  | Name | GitHub | Role | Contributions |
 |------|--------|------|---------------|
-| username(Lead)|  [username](github link ) | Team Lead | edit|
+| justinpk561-cyber(Lead)|  [justinpk561-cyber](https://github.com/justinpk561-cyber) | Team Lead | HTTPS|
 | Quantums-meruit |[Quantums-meruit](Https://github.com/Quantums-meruit/) | member | DOM |
 |username|[username](link) | member| edit |
 | gakuruclaire39-cmd | [ gakuruclaire39-cmd](Https://github.com/gakuruclaire39-cmd/)|member| HTML|
@@ -13,7 +13,6 @@ Welcome, this is our teams repository where we share projects, issues
 and conflicts in order to help each other solve and learn simultaneously
 
 ## Justin's Section
-<!-- my paragraph -->
 
 ## Calvin's Section
 
