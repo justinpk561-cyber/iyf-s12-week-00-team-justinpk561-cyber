@@ -39,12 +39,27 @@ and conflicts in order to help each other solve and learn simultaneously
 
 ## Calvin's Section
 
-I am an **undergraduate student studying Real Estate** at *Kenyatta University*, while simultaneously expanding my technical capabilities in web development and programming. 
+I am an undergraduate student at *Kenyatta University, while simultaneously expanding my technical capabilities in web development and programming. 
 
-## Core Focus & Skills
-* **Web Development:** HTML5, CSS, JavaScript and github.
-* **Real Estate student:** Interested in real estate analytics, property management systems, and building digital tools for the property market.
-* **Tools & Workflow:** VS Code, Command Line / Shell, and collaborative GitHub workflows.
+### JavaScript
+JavaScript is a high-level, interpreted programming language that adds interactivity, dynamic behavior, and logic to web pages. It runs directly in the browser and forms the core of modern interactive web applications.
+
+### Why Students Should Use It
+* It enables dynamic client-side web interactivity and real-time user interface updates.
+* It is an essential pillar of web development alongside HTML and CSS.
+* It supports modern ES6+ features, asynchronous operations, and API data fetching.
+* It expands into full-stack development through environments like Node.js.
+
+### How to Get Started
+* Write and test scripts directly inside your browser's Developer Console.
+* Embed JavaScript into HTML using `<script>` tags or link external `.js` files.
+* Practice coding fundamentals using code editors like VS Code paired with Live Server.
+* Build interactive mini-projects like calculators, dynamic forms, and to-do lists.
+
+### Useful Links
+* [MDN Web Docs - JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [JavaScript.info - The Modern JavaScript Tutorial](https://javascript.info/)
+
 
 > *"Continuous learning and version control are key to building solid, scalable software."*
 
