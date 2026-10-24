@@ -14,6 +14,29 @@ and conflicts in order to help each other solve and learn simultaneously
 
 ## Justin's Section
 
+## HTTPS
+
+**HTTPS (Hypertext Transfer Protocol Secure)** is a secure version of HTTP used to transfer data between a web browser and a website. It helps protect information exchanged online from being intercepted or altered.
+
+### Why Students Should Use It
+
+- It encrypts data exchanged between a browser and a website.
+
+- It helps protect sensitive information, such as passwords and personal details.
+- It verifies a website's identity using a digital certificate.
+- It helps prevent attackers from reading or modifying data while it is being transmitted.
+
+### How to Get Started
+1. Visit websites using `https://` in their web addresses.
+2. Check for the security indicator in your browser's address bar.
+3. When developing a website, configure HTTPS using a valid TLS certificate.
+4. Avoid entering sensitive information on websites that show security warnings.
+
+### Useful Links
+- [HTTPS Explained - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Glossary/HTTPS)
+- [Let's Encrypt - Free TLS Certificates](https://letsencrypt.org/)
+- 
+
 ## Calvin's Section
 
 I am an **undergraduate student studying Real Estate** at *Kenyatta University*, while simultaneously expanding my technical capabilities in web development and programming. 
