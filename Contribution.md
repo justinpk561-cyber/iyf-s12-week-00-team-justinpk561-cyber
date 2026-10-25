@@ -10,11 +10,11 @@
 
 # Our Teams Knowledge Base
 Welcome, this is our teams repository where we share projects, issues
-and conflicts in order to help each other solve and learn simultaneously
+and projects in order to help each other solve and learn simultaneously
 
 ## Justin's Section
 
-## HTTPS
+### HTTPS
 
 **HTTPS (Hypertext Transfer Protocol Secure)** is a secure version of HTTP used to transfer data between a web browser and a website. It helps protect information exchanged online from being intercepted or altered.
 
@@ -35,7 +35,6 @@ and conflicts in order to help each other solve and learn simultaneously
 ### Useful Links
 - [HTTPS Explained - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Glossary/HTTPS)
 - [Let's Encrypt - Free TLS Certificates](https://letsencrypt.org/)
-- 
 
 ## Calvin's Section
 
@@ -110,9 +109,7 @@ I am learning HTML to build structured web pages. I love creating forms, links, 
  
 ## Magdalene's section 
 
-## fidel's section
-
-## Joseph 
+## Joseph's section
 ### [`Document Object Model`](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 
 The  DOM connects web pages to script or programming languages by representing the structure of a document 
