@@ -11,6 +11,7 @@ I am an **undergraduate student studying Real Estate** at *Kenyatta University*,
 
 ## Core Focus & Skills
 * **Web Development:** HTML5, CSS, JavaScript and github.
+* **Web Development:** HTML, CSS, JavaScript and gitbub.
 * **Real Estate student:** Interested in real estate analytics, property management systems, and building digital tools for the property market.
 * **Tools & Workflow:** VS Code, Command Line / Shell, and collaborative GitHub workflows.
 
