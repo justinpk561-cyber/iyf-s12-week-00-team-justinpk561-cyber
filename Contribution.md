@@ -110,243 +110,131 @@ I am learning HTML to build structured web pages. I love creating forms, links, 
 ## Magdalene's section 
 
 ## Joseph's section
-### [`Document Object Model`](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 
-The  DOM connects web pages to script or programming languages by representing the structure of a document 
-DOM represents a document with a logical tree, where by each branch of tree ends in a node , and each node contains objects. DOM methods allow programmatic access to the tree. With them, you can change the document's structure, style, or content.
+### [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+
+The DOM allows JavaScript to interact with web pages by representing the document as a tree of objects called nodes. It allows us to change the structure, content, and style of a webpage.
 
 ### Concepts and Usage
 
-A web page is a document that can be either displayed in the browser window or as a `HTML` source. In both cases, the `DOM` allows it to be manipulated. As an object-oriented representation of the web page, it can be modified using a scripting language  like `Javascript`.
+A webpage can be viewed in the browser or as HTML source code. The DOM allows JavaScript to access and modify the webpage.
 
-For Example:
-```
+Example:
+
+```js
 const paragraphs = document.querySelectorAll("p");
-// paragraphs[0] is the first <p> element
-// paragraphs[1] is the second <p> element, etc.
 alert(paragraphs[0].nodeName);
 ```
 
+This selects all paragraph elements and displays the name of the first one.
 
-### [Dom Tree](https://www.w3schools.com/js/js_htmldom.asp)
-When a web page loads, the browser creates a tree-like representation of the HTML document.
+### [DOM Tree](https://www.w3schools.com/js/js_htmldom.asp)
 
-Each part of the document are nodes in the tree:
+When a webpage loads, the browser creates a tree-like representation of its HTML elements.
 
+| Node | Description |
+|---|---|
+| `<html>` | Element node |
+| `<head>` | Element node |
+| `<body>` | Element node |
+| `<a>` | Element node |
+| `href` | Attribute |
+| `<h1>` | Element node |
+| `My Header` | Text node |
 
-|Node |Description|
-|----------|--------------|
-|`<html>`|Element Node|
-|`<head> `| Element Node|
-|`<body>`| Element node|
-| `<a>` | Element Node|
-| `href` | Attribute node|
-| `<h1>` | Element Node |
-| `My Header`| Text node |
+Example:
 
-
-
-DOM connects web pages to script or programming languages by representing the structure of a document with logical tree where by each branch of the tree ends in a node and each node contains objects.
-
-Example :
-
-``` HTML
+```html
 <body>
     <h1>Hello</h1>
     <p>Welcome</p>
 </body>
-
 ```
 
-The browser represents it roughly as :
+The DOM tree can be represented roughly as:
 
-```
+```text
 document
 └── body
     ├── h1
     └── p
 ```
 
-1. **Document Object**
-`document ` represents the webpage 
+### 1. Document Object
 
-``` JavaScript
-`document`
-```
+The `document` object represents the webpage and is usually where DOM manipulation begins.
 
-DOM manipulation usually starts from `document `
-
-Example:
-``` javascript 
+```js
 document.querySelector("h1");
 ```
 
-means: 
+This selects the first `<h1>` element on the page.
 
-> find an `<h1>` element in the webpage .
+### 2. Selecting Elements
 
-
-2. `*Selecting Elements *`
-
- `QuerySelector()`
-
-``` javascript
-const heading = document.querySelector(".title");
-```
-
-`querySelector()` finds the first element matching the selector
-
-it uses CSS selector syntax.
-
-``` javascript
-**ID** 
-
-document.queryselector("#title")
-
-
-**Class** 
-
-document.queryselector(".title")
-
-**Tag**
-
-document.queryselector("h1")
-
-```
-
-NB: 
->the selector tells js what to search for .
->The returned value is the actual DOM element 
-
-
-Example 
-
-``` javascript
-const heading = document.queryselector(".title")
-
-```
-
-
-> ``` plain text
-> ".title" -->  selector
-> heading -> actual element
-> heading.textContent -> text inside the element
-> ```
-
-
-3. `querySelector()` vs `querySelectorAll()`
-
-`querySelector()`
-
-- it returns the first matching element.
-
-
-``` js
-const message = document.querySelector(".message");
-```
-
-
-if you have :
-
-```html
-<p class="message">One</p>
-<p class="message">Two</p>
-```
-
-only the first `<p>` is returned 
-
-`querySelectorAll()`
-
-returning all matching elements 
+`querySelector()` selects the first element that matches a CSS selector.
 
 ```js
+document.querySelector("#title");  // ID
+document.querySelector(".title");  // Class
+document.querySelector("h1");      // Tag
+```
+
+**NB:** The selector tells JavaScript what to search for, and the returned value is the actual DOM element.
+
+### 3. `querySelector()` vs `querySelectorAll()`
+
+- `querySelector()` returns the first matching element.
+- `querySelectorAll()` returns all matching elements in a NodeList.
+
+```js
+const message = document.querySelector(".message");
 const messages = document.querySelectorAll(".message");
 ```
 
-This gives a Nodelist containing all matching elements.
+If several elements have the class `message`, the first variable holds only the first match, while the second holds all matches.
 
-4.`NodeList indexing`
+### 4. NodeList Indexing
 
-In JavaScript indexing begins at [0]
-
-Example:
+JavaScript indexing starts at `0`, so the first element is at index `0`.
 
 ```js
 const topics = document.querySelectorAll(".topic");
 
-console.log(topics[0]);
-console.log(topics[1]);
-console.log(topics[2]);
+console.log(topics[0]); // First element
+console.log(topics[1]); // Second element
+console.log(topics[2]); // Third element
 ```
 
-hence:
+**NB:** `topics[1].textContent` accesses the text of the second element.
 
-``` Plain text
-topics[0] → first element
-topics[1] → second element
-topics[2] → third element
-```
+### 5. `textContent`
 
->NB:
->index 0 = first element 
+`textContent` allows us to read or change the text inside an element.
 
-thus:
+**Reading text:**
 
-```js 
-topics[1].textContent
-```
-
-gets the second element's text.
-
-
-5.`textContent
-
-`textContent` allows one to read or change text inside an element.
-
-Reading
-
-```js 
+```js
 const heading = document.querySelector("h1");
-
 console.log(heading.textContent);
 ```
 
-if:
-
-```html
- <h1> Hello</h1>
-```
-
-the result is:
-
-```plain text 
-Hello
-```
-
-**Changing **
+**Changing text:**
 
 ```js
-heading.textContent = "Welcome!"
+heading.textContent = "Welcome!";
 ```
 
-The text on the webpages changes.
+This changes the heading's text on the webpage.
 
-NB ⭐
+**NB:**
 
+- `heading` refers to the element.
+- `heading.textContent` refers to the text inside it.
 
-``` Plain text
-heading
-       ↓
-actual element
+### 6. `forEach()`
 
-heading.textContent
-       ↓
-text inside the element
-```
-
-6.**forEach()**
-
-When `querySelectorAll() ` gives you multiple elements, you can loop through them with `forEach()`
+When `querySelectorAll()` returns multiple elements, `forEach()` can loop through them one at a time.
 
 ```js
 const fruits = document.querySelectorAll(".fruit");
@@ -356,122 +244,50 @@ fruits.forEach(function(fruit) {
 });
 ```
 
-if there are three fruits, the callback runs three times.
+If there are three matching elements, the callback runs three times.
 
-**important distiction**
+The parameter name is your choice. For example, `fruit`, `item`, or `element` can all be used.
 
-``` plain text
-fruits
-  ↓
-entire collection
+**NB:** `querySelectorAll()` selects the elements, while `forEach()` iterates through them.
 
-fruit
-  ↓
-one element at a time
-```
+### 7. Reading Attributes
 
-the parameter name doesn't have to be `fruit`
-
-All the below are valid:
-
-```js
-	fruits.forEach(function(fruit) {
-});
-```
-
-``` js
-
-fruits.forEach(function(item) {
-});
-```
-
-
-```js
-
-fruits.forEach(function(element) {
-});
-```
-
-
-the name is your choice 
-
-**NB ⭐**
-
-`forEach()` **doesn't select elements**.
-
-`querySelectorAll()` selects them.
-
-`forEach()` **iterates through the selected elements**.
-
-7. **Reading Attributes**
-
-DOM elements can have HTML atrributes.
-
-Example:
+HTML elements can have attributes, such as `href` on a link.
 
 ```html
 <a href="https://example.com">Visit</a>
 ```
 
+Use `getAttribute()` to read an attribute's value.
 
-attributes are read using the below:
-
-``` js
-
-element.getattribute("href")
-```
-
-Example:
-
-``` js
+```js
 const link = document.querySelector("a");
-
 console.log(link.getAttribute("href"));
 ```
 
-output:
+Output:
 
-``` plain text
-
+```text
 https://example.com
 ```
 
-`getAttribute()`
->read an attribute.
+### 8. Changing Attributes
 
-
-8. `Changing Attributes`
-Dom allows changing attributes with:
+Use `setAttribute()` to set or change an attribute's value.
 
 ```js
-
-element.setAttribute("attribute", "value")
+link.setAttribute("href", "https://example.com");
 ```
 
-Example:
+**NB:**
 
-```js
-link.SetAttribute("href", "https://example.com")
-```
+- `getAttribute()` → reads an attribute.
+- `setAttribute()` → sets or changes an attribute.
 
+### 9. `classList`
 
-**NB ⭐**
+`classList` allows JavaScript to add, remove, toggle, or check CSS classes on an element.
 
-Remember:
-
-```plain text
-
-getAttribute() → read
-setAttribute() → change/set
-```
-
-9.`classList`
-
-classList lets JavaScript manipulate `CSS` classes.
-
-> [for more of Dom manipulation read the `article` ](https://javascript.info/document)
-
-
-
+For more information about DOM manipulation, read the [JavaScript.info article](https://javascript.info/document).
 
 
