@@ -109,185 +109,49 @@ I am learning HTML to build structured web pages. I love creating forms, links, 
  
 ## Magdalene's section 
 
-## Joseph's section
+
+--- 
+---
+
+## Joseph's Section
 
 ### [Document Object Model (DOM)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
 
-The DOM allows JavaScript to interact with web pages by representing the document as a tree of objects called nodes. It allows us to change the structure, content, and style of a webpage.
+The Document Object Model (DOM) allows JavaScript to interact with HTML webpages. When a browser loads a webpage, it creates a tree-like structure representing the HTML elements. JavaScript can then use the DOM to access these elements and make changes to the page.
 
-### Concepts and Usage
+For example, we can change text, add or remove elements, modify CSS classes, and respond to user actions such as button clicks.
 
-A webpage can be viewed in the browser or as HTML source code. The DOM allows JavaScript to access and modify the webpage.
+### How the DOM works
 
-Example:
+The DOM represents a webpage as a tree of nodes. Elements such as `<h1>`, `<p>`, and `<div>` form part of this structure. The `document` object gives us access to the webpage, while DOM methods and properties allow us to work with its elements.
 
-```js
-const paragraphs = document.querySelectorAll("p");
-alert(paragraphs[0].nodeName);
-```
+Some commonly used DOM methods and properties include:
 
-This selects all paragraph elements and displays the name of the first one.
+- `querySelector()` – selects the first element matching a CSS selector.
+- `querySelectorAll()` – selects all elements matching a CSS selector.
+- `textContent` – reads or changes the text inside an element.
+- `classList` – allows us to add, remove, or toggle CSS classes.
+- `createElement()` – creates a new HTML element.
+- `addEventListener()` – allows JavaScript to respond to events, such as clicks.
 
-### [DOM Tree](https://www.w3schools.com/js/js_htmldom.asp)
-
-When a webpage loads, the browser creates a tree-like representation of its HTML elements.
-
-| Node | Description |
-|---|---|
-| `<html>` | Element node |
-| `<head>` | Element node |
-| `<body>` | Element node |
-| `<a>` | Element node |
-| `href` | Attribute |
-| `<h1>` | Element node |
-| `My Header` | Text node |
-
-Example:
-
-```html
-<body>
-    <h1>Hello</h1>
-    <p>Welcome</p>
-</body>
-```
-
-The DOM tree can be represented roughly as:
-
-```text
-document
-└── body
-    ├── h1
-    └── p
-```
-
-### 1. Document Object
-
-The `document` object represents the webpage and is usually where DOM manipulation begins.
-
-```js
-document.querySelector("h1");
-```
-
-This selects the first `<h1>` element on the page.
-
-### 2. Selecting Elements
-
-`querySelector()` selects the first element that matches a CSS selector.
-
-```js
-document.querySelector("#title");  // ID
-document.querySelector(".title");  // Class
-document.querySelector("h1");      // Tag
-```
-
-**NB:** The selector tells JavaScript what to search for, and the returned value is the actual DOM element.
-
-### 3. `querySelector()` vs `querySelectorAll()`
-
-- `querySelector()` returns the first matching element.
-- `querySelectorAll()` returns all matching elements in a NodeList.
-
-```js
-const message = document.querySelector(".message");
-const messages = document.querySelectorAll(".message");
-```
-
-If several elements have the class `message`, the first variable holds only the first match, while the second holds all matches.
-
-### 4. NodeList Indexing
-
-JavaScript indexing starts at `0`, so the first element is at index `0`.
-
-```js
-const topics = document.querySelectorAll(".topic");
-
-console.log(topics[0]); // First element
-console.log(topics[1]); // Second element
-console.log(topics[2]); // Third element
-```
-
-**NB:** `topics[1].textContent` accesses the text of the second element.
-
-### 5. `textContent`
-
-`textContent` allows us to read or change the text inside an element.
-
-**Reading text:**
+### Example
 
 ```js
 const heading = document.querySelector("h1");
-console.log(heading.textContent);
-```
-
-**Changing text:**
-
-```js
 heading.textContent = "Welcome!";
 ```
 
-This changes the heading's text on the webpage.
+This code selects the first `<h1>` element and changes its text to "Welcome!".
 
-**NB:**
+### Conclusion
 
-- `heading` refers to the element.
-- `heading.textContent` refers to the text inside it.
+The DOM makes webpages interactive by allowing JavaScript to access and modify HTML elements. Understanding how to select elements, change their content, and handle events is an important step in learning to build dynamic webpages.
 
-### 6. `forEach()`
+**NB:** The DOM is not part of the JavaScript language itself. It is a Web API provided by browsers that allows JavaScript to interact with webpages.
 
-When `querySelectorAll()` returns multiple elements, `forEach()` can loop through them one at a time.
-
-```js
-const fruits = document.querySelectorAll(".fruit");
-
-fruits.forEach(function(fruit) {
-    console.log(fruit.textContent);
-});
-```
-
-If there are three matching elements, the callback runs three times.
-
-The parameter name is your choice. For example, `fruit`, `item`, or `element` can all be used.
-
-**NB:** `querySelectorAll()` selects the elements, while `forEach()` iterates through them.
-
-### 7. Reading Attributes
-
-HTML elements can have attributes, such as `href` on a link.
-
-```html
-<a href="https://example.com">Visit</a>
-```
-
-Use `getAttribute()` to read an attribute's value.
-
-```js
-const link = document.querySelector("a");
-console.log(link.getAttribute("href"));
-```
-
-Output:
-
-```text
-https://example.com
-```
-
-### 8. Changing Attributes
-
-Use `setAttribute()` to set or change an attribute's value.
-
-```js
-link.setAttribute("href", "https://example.com");
-```
-
-**NB:**
-
-- `getAttribute()` → reads an attribute.
-- `setAttribute()` → sets or changes an attribute.
-
-### 9. `classList`
-
-`classList` allows JavaScript to add, remove, toggle, or check CSS classes on an element.
-
+**Further reading:**
+- [MDN – DOM Introduction](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+- [W3Schools – HTML DOM](https://www.w3schools.com/js/js_htmldom.asp)
 For more information about DOM manipulation, read the [JavaScript.info article](https://javascript.info/document).
 
 
